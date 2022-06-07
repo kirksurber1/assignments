@@ -1,0 +1,118 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: black;
+    
+
+}
+
+
+.mainTitle {
+    position: relative;
+    text-align: center;
+    font-size: 4.5vh;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid black;
+    padding: 2vh
+     
+
+    
+}
+
+
+
+input {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 1.5vh;
+    width: 60vw;
+    float: left;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+
+button {
+    border-radius: 25px;
+    padding: .6rem;
+    width: 10rem;
+    background-color: rgb(5, 201, 5);
+    float: right;
+    margin: auto;
+    
+}
+
+form {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+}
+
+
+
+
+
+li {
+    display: flex;
+    direction: column;
+    position: relative;
+    list-style-type: none;
+    font-size: 2.75vh ;
+    /* line-height: 1.5; */
+    top: 1.5vh;
+    width: 30%;
+    height: auto;
+    margin-top: .5vh;
+    padding: 2vh;
+}
+
+
+
+.editButton {
+    display: inline-block;
+    position: absolute;
+    width: 1vw;
+    background-color: transparent;
+    left: 20vw;
+    margin-top: .5vh;
+    margin-left: 45%;
+    background-image: url(editIcon.png);
+    background-repeat: no-repeat;
+    opacity: .6;
+    border: none;
+    height: 3.6vh;
+    padding-right: -5px;
+        
+
+}
+
+.delButton {
+    display: inline-block;
+    position: absolute;
+    width: 1vw;
+    left: 22.5vw;
+    margin-top: .5%;
+    margin-left: 50%;
+    background-image: url(deleteIcon.png);
+    background-repeat: no-repeat;
+    opacity: .6;
+    background-color: transparent;
+    border: none;
+    height: 3.6vh;
+    padding-right: 1.6vw;
+    
+
+}
+
+modal {
+    box-sizing: border-box;
+}
