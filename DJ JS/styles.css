@@ -1,0 +1,23 @@
+
+#mainTitle {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.headerMain {
+    text-align: center;
+    position: relative;
+}
+
+#square {
+    position: absolute;
+    width: 100%;
+    
+    border: 3px solid black;
+    padding: 5%;
+
+}
+#boxTitle {
+    text-align: center;
+}
