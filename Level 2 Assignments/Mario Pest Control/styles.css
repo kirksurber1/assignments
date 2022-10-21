@@ -1,0 +1,88 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    scale: 1.5;
+    height: 100px;
+    width: 100px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+li {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh;
+    list-style-type: none;
+    width: 30vw;
+    line-height: 1.5;
+    scale: 1.5;
+
+}
+
+
+input {
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 3vh;
+}
+
+button {
+    background-color: green;
+    border-radius: 35px;
+    width: 100vw;
+    padding-top: 1vh;
+    padding-bottom: 1vw;
+}
+
+.total {
+    text-align: center;
+    width: 30vw;
+    padding: 2vh;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#totalValue {
+    font-size: 30px;
+    right: 2vw;
+}
+
+footer {
+    color: white;
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 2vh;
+}
+
+@media (max-width: 560px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        height: 100%;
+        width: 100%;
+    }
+    .total {
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <h1> Travel Form</h1>
+        <h2>Enter Your Information Below</h2>
+
+        <div>
+            <form name="airline-form">
+                <input name="fName" type="text" placeholder="First name: " value="First Name: "><br>
+                <input name="lName" type="text" placeholder="Last name: " value="Last name: "><br>
+                <input name="age" type="number" placeholder="Age" value=""><br>
+                <label>Male</label>
+                <input name="gender" type="radio" placeholder="Male" value="Male">
+                <span>
+                    <label for="Female">Female</label>
+                    <input name="gender" type="radio" placeholder="Female" value="Female"></span><br>
+                <select name="travel-location">
+                    <option>Italy</option>
+                    <option>Netherlands</option>
+                    <option>Scotland</option>
+                </select>
+                <br>
+                <label>Vegetarian</label>                
+                <input class="diet" name="diet" type="checkbox" placeholder="vegetarian" value="vegetarian">
+                <span>
+                    <label>Kosher</label>
+                    <input  class="diet" name="diet" type="checkbox" placeholder="kosher" value="vegetarian">
+                </span>
+                <span>
+                    <label>Lactose</label>
+                    <input  class="diet" name="diet" type="checkbox" placeholder="Lactose Free" value="lactose free">
+                </span>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+     
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>

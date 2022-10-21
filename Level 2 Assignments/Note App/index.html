@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Entreprenuer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header></header>
+
+        <main>
+            <div class="topContainer">
+                <div id="today">Today</div>
+                <div id="tomorrow">Tomorrow</div>
+                <div id="thisWeek">This Week</div>
+            </div>
+
+            <div class="noteInputArea">
+              <div class="noteInput">
+                <input type="text" class="newTitle">
+                <button id="addNote">Add Note</button>
+              </div>
+              
+              <div class="newNote" draggable="true" contenteditable="true">
+                <div>
+                  <ul>
+                    <h3>Placer</h3>
+                    <li>Note</li>
+                  </ul>
+                </div>
+                <div id="noteFunctions">
+                  <label for="date">Due Date</label>
+                  <input type="date" class="calendar">
+                  <button class="edit" value="edit">Edit</button>
+                  <button class="del" value="delete">Delete</button>
+                </div>
+              </div>
+              
+            </div>
+            <div class="onDeck">On Deck
+
+            </div>
+
+            <div class="bottomRow">
+                <div id="awaitingReply">Awaiting Reply</div>
+                <div id="completed">Completed</div>
+
+            </div>
+
+
+        </main>
+       
+        
+        
+    </body>
+</html>
