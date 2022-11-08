@@ -1,0 +1,193 @@
+
+
+.boxes {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #3c3c3c;
+    height: auto;
+    width: 97vw;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 15px .1px #3c3c3c;
+
+    
+
+}
+
+#box1 {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    background-color: firebrick;
+    transition-delay: 500ms;
+    transition: background-color 1s ease-in-out 250ms;
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c;
+}
+
+#box1:hover {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    background-color: rgb(240, 255, 32);
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c; 
+}
+
+#box2 {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c;
+    transition: border 500ms ease-in-out 
+}
+#box2:hover {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 3px solid firebrick;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c;
+    animation: borderColor 5s infinite;
+}
+
+@keyframes borderColor {
+    from {transform: translate(-0%, -0%) rotate(0);}
+    to  {transform: translate(-0%, -0%) rotate(360deg);}
+}
+
+#box3 {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c;
+    transition: border-radius 1000ms ease-in-out, height 1000ms ease-in-out, background-image 1000ms ease-in-out;
+
+}
+#box3:hover {
+    margin: 1vw;
+    border-radius: 30px 0px 65px 0px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 15vw;
+    box-sizing: border-box;
+    box-shadow: .1px 10px 15px .1px #3c3c3c;
+    background-image: linear-gradient(firebrick, #750202);
+}
+#box4 {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c;
+    transition: box-shadow 1000ms ease-in-out
+}
+#box4:hover {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow:  1px 30px 15px 10px firebrick;
+    animation: whacky 2s infinite, borderShift 2s infinite;
+    
+}
+
+@keyframes whacky {
+    from {rotate: -0deg}
+    25% {rotate: -45deg}
+    50% {rotate: 45deg;}
+    75% {rotate: -45deg;}
+    80% {rotate: 45deg}
+    90% {rotate: -45deg}
+    to {rotate: 0deg;}
+}
+
+@keyframes borderShift {
+    from {box-shadow: 1px 30px 15px 10px firebrick}
+    25% {box-shadow: 5px 15px 0px 0px firebrick}
+    50% {box-shadow: 2px -7px 10px 20px firebrick}
+    75% {box-shadow: 1px 30px 15px 10px firebrick}
+    80% {box-shadow: 3px 50px 10px 50px firebrick}
+    90% {box-shadow: 1px 30px 15px 10px firebrick}
+    to {box-shadow: 1px 30px 15px 10px firebrick}
+}
+
+#box5 {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px 10px 15px .1px #3c3c3c;
+    overflow: hidden;
+    transition: 1000ms ease-in-out;
+}
+#box5:hover {
+    margin-top: 24vw;
+    border-radius: 20px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px -55px 15px 31px #3c3c3c;
+}
+
+#box6 {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 12vw;
+    height: 10vw;
+    box-sizing: border-box;
+    box-shadow: .1px 5px 15px .1px #3c3c3c;
+    transition: 1000ms ease-in-out; rotate: 1000ms ease-in-out; background: 1000ms ease-in-out;
+}
+#box6:hover {
+    margin: 1vw;
+    border-radius: 15px;
+    border: 1px solid #3c3c3c;
+    width: 15vw;
+    height: 20vw;
+    box-sizing: border-box;
+    box-shadow: .1px 10px 15px .1px #3c3c3c;
+    rotate: 15deg;
+    background: linear-gradient( blue 25%, firebrick 50%, olive 75%, orange 100%);
+    color: white;
+    
+    
+    
+}
+
+
+
+ audio{
+    position: absolute;
+    top: 45vh;
+    left: 45vw;
+   
+}
+
+#video {
+    object-fit: cover;
+    z-index: 1;
+}
