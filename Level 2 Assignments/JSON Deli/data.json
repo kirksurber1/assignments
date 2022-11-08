@@ -1,0 +1,29 @@
+
+
+{
+    "appetizers": [
+        "name": "Cheese Sticks",
+        "ingredients": ["mozerella", "bread", "parsley flakes"],
+        "description": "Wonderful tasting sticks to put in your mouth"
+    ], 
+    "cold sandwiches": [
+        "name": "Ham Sandwhich",
+        "ingredients": ["ham", "bread", "cheese"],
+        "description": "Wonderful tasting sandwhich"
+    ],
+    "hot sandwiches": [
+        "name": "Grilled Cheese",
+        "ingredients": ["mozerella", "American", "Provalone", "Bread", "Love"],
+        "description": "Wonderful, gooiness to put in your mouth"
+    ],
+    "desserts": [
+        "name": "Home-made Icecreate",
+        "ingredients": ["Milk", "Half & Half", "Whipping Cream"],
+        "description": "Grandma's Recipe"
+    ],
+    "drinks": [
+        "name": "Jack and Coke",
+        "ingredients": ["Jack", "More Jack", "Splash of Coke"],
+        "description": "MMMMMmmmmmm, Yummy"
+    ]
+}
