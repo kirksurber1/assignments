@@ -1,13 +1,12 @@
 * {
-    
     text-align: left;
-
+    margin: 0%;
+    
 }
 
 p {
-    font-size: 16px;
-    margin-left: 10vw;
-    margin-right: 5vw;
+    font-size: 24px;
+    line-height: 2;
 }
 
 h3 {
@@ -16,17 +15,368 @@ h3 {
 }
 
 .header {
+    position: relative;
     height: 24vh;
     width: 100%;
-    background-image: url("http://csszengarden.com/214/contours-opaque.png");
+    background-image: url("http://csszengarden.com/214/contours-opaque.png"),  url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/huntington.jpg");
     background-color: rgb(94, 139, 94);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    
+    
 }
 
+
+#contour {
+    z-index: -1;
+    object-fit: repeat;
+}
+
+#logo {
+    position: absolute;
+    height: 115px;
+    width: 115px;
+    opacity: .6;
+    top: -10%;
+    left: 15%;
+    color: white;
+    margin: 1vw;
+    transform: translate(-50%, 50%);
+
+    
+}
+
+.header > h1 {
+    position: absolute;
+    color: white;
+    font-size: 58px;
+    font-weight: 100;
+    top: 15%;
+    left: 22%;
+    margin-top: 1vw;
+
+}
+
+.header > h2 {
+    position: absolute;
+    color: white;
+    opacity: .7;
+    font-size: 35px;
+    top: 40%;
+    left: 22%;
+    margin-top: 1vw;
+}
+
+#button {
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgba(255,255,255, .3);
+    z-index: 2 ;
+    top: 90%;
+    left: 50%;
+    border: none;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: large;
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+
+#button h4 {
+    text-align: center;
+    margin: .75vw;
+}
+
+#button::after {
+    position: absolute;
+    content: ">";
+    left: 98%
+}
 .sect1 {
-    height: 50vh;
+    height: auto;
+    padding: 3vw;
+    margin: 3vw;
+    
+        
+
 }
 
 .sect2 {
     background-color: rgba(118, 177, 118, 0.541);
     background-image: url("http://csszengarden.com/214/bamboo.png");
+    padding: 3vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    
+
 }
+
+.sect3 {
+    padding: 3vw;
+    height: auto;
+    
+}
+
+.sect4 {
+    display: flex;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background-image: url("http://csszengarden.com/214/contours-opaque.png"), url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/koi.jpg");
+    background-repeat: repeat, repeat, no-repeat;
+    object-fit: cover;
+    padding: 3vw;
+    color: white;
+    background-size: auto, auto, cover;
+}
+
+.sect4 p {
+    font-size: 50px;
+    text-align: center;
+    width: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sect4 p i {
+    opacity: .7;
+}
+
+.sect5 {
+    background-color: #134347 ;
+    height: 12vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.sect6 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: #ceffcc44;
+    height: auto;
+    width: 100%;
+    
+
+}
+
+.sect6 div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 1vw;
+    margin-bottom: 0;
+    width: 50%;
+    height: 6vh;
+    justify-content: center;
+    text-indent: 15%;
+
+}
+.sect6 h4 {
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.sect6 i {
+    opacity: .4;
+}
+
+.sect7 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding-top: 1vw;
+    background-color: rgba(118, 177, 118, 0.541);
+    background-image: url("http://csszengarden.com/214/bamboo.png");
+
+}
+
+.sect7 div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 1vw;
+    margin-bottom: 0;
+    width: 50%;
+    height: 6vh;
+    justify-content: center;
+    text-indent: 15%;
+
+}
+.sect7 h4 {
+    font-size: x-large;
+    font-weight: 100;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+@media only screen and (min-width: 1130px) { 
+
+    .header h2,h3 {
+        text-align: left;
+    }
+
+    .sect1 {
+        height: auto;
+        padding: 1.5vw;
+        margin: .75vw;
+        width: 80%;
+        padding-right: 30%;
+        
+            
+    
+    }
+
+    .sect1 h3 {
+        margin: 1vw;
+    }
+    .sect1 h3, p {
+        text-align: left;
+        margin-right: 10%;
+        margin-left: 20%;
+    }
+    
+    .sect2 {
+        background-color: rgba(118, 177, 118, 0.541);
+        background-image: url("http://csszengarden.com/214/bamboo.png");
+        padding: 3vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 20%;
+        height: auto;
+        
+    
+    }
+
+    .sect2 h3, p {
+        text-align: left;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    
+    .sect3 {
+        padding: 3vw;
+        height: auto;
+        padding-right: 20%;
+        
+    }
+
+    .sect3 h3, p {
+        text-align: left;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    
+    .sect4 {
+        display: flex;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        background-image: url("http://csszengarden.com/214/contours-opaque.png"), url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/koi.jpg");
+        background-repeat: repeat, repeat, no-repeat;
+        object-fit: cover;
+        padding: 3vw;
+        color: white;
+        background-size: auto, auto, cover;
+    }
+    
+    .sect4 p {
+        font-size: 50px;
+        text-align: center;
+        width: 75%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .sect4 p i {
+        opacity: .7;
+    }
+    
+    .sect5 {
+        background-color: #134347 ;
+        height: 12vh;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    
+    .sect6 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: #ceffcc44;
+        height: auto;
+        width: 20%;
+        z-index: 3;
+        top: 0;
+        left: 80%;
+        padding-top: 15%;
+        padding-bottom: 3vh;
+
+    
+    }
+    
+    .sect6 div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 1vw;
+        margin-left: 2vw;
+        margin-bottom: 0;
+        width: 65%;
+        height: 6vh;
+        opacity: .4;
+    
+    }
+    .sect6 h4 {
+        font-size: x-large;
+        font-weight: 100;
+    }
+    .sect6 p {
+        font-size: 20px;
+    }
+    
+    .sect6 i {
+        opacity: .4;
+    }
+    
+    .sect7 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 25%;
+        height: auto;
+        padding-top: 1vw;
+        background-color: rgba(118, 177, 118, 0.541);
+        background-image: none;
+        z-index: 3;
+        top: 98%;
+        left: 80%;
+        padding-top: 12vh;
+        padding-bottom: 92.5vh;
+        opacity: .4;
+    }
+    
+    .sect7 div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 1vw;
+        margin-bottom: 0;
+        width: 65%;
+        height: 6vh;
+        justify-content: center;
+        text-indent: 15%;
+    
+    }
+    .sect7 h4 {
+        font-size: x-large;
+        font-weight: 100;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+ } 
