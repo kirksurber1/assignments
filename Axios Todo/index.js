@@ -5,6 +5,7 @@
 
 
 
+
 function axiosGet() {
 
 
@@ -16,10 +17,13 @@ axios.get("https://api.vschool.io/kirksurber/todo")
     h2.innerText = response.data[i].title
     const dropZone = document.getElementById("dropZone")
     const makeDiv = document.createElement("div")
+    const img = document.createElement("img")
+    img.src = response.data[i].imgUrl
     const check = document.createElement("input")
     check.className = "check"
     check.type = "checkbox"
     check.value = response.data[i].completed
+    check.dataset.value = response.data[i]._id
     const checkLabel = document.createElement("label")
     checkLabel.innerText = response.data[i].completed
     
@@ -39,6 +43,7 @@ axios.get("https://api.vschool.io/kirksurber/todo")
     makeDiv.appendChild(checkLabel)
     makeDiv.appendChild(editBut)
     makeDiv.appendChild(delBut)
+    makeDiv.dataset.value = response.data[i]._id
     
     
     makeDiv.style.display = "flex"
@@ -81,9 +86,13 @@ function makeTodo() {
     h3Price.innerText = formPrice
     const h3Url = document.createElement("h3")
     h3Url.innerText = formURL
+    const img = document.createElement("img")
+    
     const check = document.createElement("input")
     check.className = "check"
     check.type = "checkbox"
+    check.dataset.value = response.data[i]._id
+
     const checkLabel = document.createElement("label")
     checkLabel.innerText = "false"
     
@@ -100,6 +109,7 @@ function makeTodo() {
     makeDiv.appendChild(h3Price)
     makeDiv.appendChild(h3Desc)
     makeDiv.appendChild(h3Url)
+    makeDiv.appendChild(img)
     makeDiv.appendChild(check)
     makeDiv.appendChild(checkLabel)
     makeDiv.appendChild(editBut)
@@ -109,6 +119,7 @@ function makeTodo() {
     makeDiv.style.position = "relative"
     makeDiv.style.border = "1px solid #3c3c3c"
     makeDiv.style.borderRadius = "15px"
+    img.style.width = "5vw"
 
     const newTodoInfo = {
         completed: checkLabel.innerHTML,
@@ -133,10 +144,14 @@ function makeTodo() {
         h2.innerText = response.data[i].title
         const dropZone = document.getElementById("dropZone")
         const makeDiv = document.createElement("div")
+        const img = document.createElement("img")
+        img.src = response.data[i].imgUrl
         const check = document.createElement("input")
         check.className = "check"
         check.type = "checkbox"
         check.value = response.data[i].completed
+        check.dataset.value = response.data[i]._id
+
         const checkLabel = document.createElement("label")
         checkLabel.innerText = response.data[i].completed
         
@@ -151,6 +166,7 @@ function makeTodo() {
         
         dropZone.appendChild(makeDiv)
         makeDiv.appendChild(h2)
+        makeDiv.appendChild(img)
         makeDiv.appendChild(check)
         makeDiv.appendChild(checkLabel)
         makeDiv.appendChild(editBut)
@@ -163,6 +179,7 @@ function makeTodo() {
         makeDiv.style.borderRadius = "15px"
         h2.style.width = "50%"
         editBut.style.marginLeft = "60%"
+        img.style.width = "5vw"
 
         location.reload()
     }
@@ -174,7 +191,18 @@ function makeTodo() {
    // CLEAR ALL DROPZONE INNERHTML AND DO AXIOS GET AGAIN TO GAIN ID'S!!!!
 }
 
-
+document.addEventListener("change", (e) => {
+    if(e.target.checked) {
+       axios.put("https://api.vschool.io/kirksurber/todo/" + e.target.dataset.value, {"completed": true})
+       .then(response => console.log(response.data))
+       .catch(error => console.log(error))
+    }else {
+        axios.put("https://api.vschool.io/kirksurber/todo/" + e.target.dataset.value, {"completed": false})
+       .then(response => console.log(response.data))
+       .catch(error => console.log(error))
+    }
+    location.reload
+})
 
 
 
