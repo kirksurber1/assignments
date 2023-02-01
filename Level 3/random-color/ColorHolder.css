@@ -1,0 +1,21 @@
+
+
+.colorHolder {
+
+    display: flex;
+    border: 1px solid #3c3c3c;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, .2) 0px -1px 7px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+
+}
+
+.colorBlock {
+    width: 2%;
+    height: 10vh;
+    border: 1px solid #3c3c3c;
+    border-radius: 15px;
+
+}
