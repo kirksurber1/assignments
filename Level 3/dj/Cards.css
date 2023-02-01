@@ -1,0 +1,12 @@
+
+.cards {
+    border: 1px solid #3c3c3c;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, .2) 0px -1px 7px 1px;
+    box-shadow: inset rgba(255, 255, 250, .2);
+    width: 90%;
+    height: 80%;
+    margin: 1em;
+
+}
