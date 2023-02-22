@@ -1,0 +1,24 @@
+
+.navBar {
+   
+    width: 100vw;
+    height: 50px;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, .2) 0px 3px 7px 1px;
+    justify-content: center;
+}
+ul {
+    display: flex;
+}
+.navBar li {
+    cursor: pointer;
+    list-style: none;
+    width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+

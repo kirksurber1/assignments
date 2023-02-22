@@ -1,0 +1,14 @@
+
+
+
+* {
+    text-align: center;
+}
+
+main {
+    box-sizing: border-box;
+    border: 1px solid #222;
+    box-shadow: rgba(0, 0, 0, .2) 0px 3px 7px 1px;
+    margin-top: 1em;
+    height: 60vh;
+}

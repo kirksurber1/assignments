@@ -1,0 +1,23 @@
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+    border: 1px solid #222;
+    box-shadow: rgba(0, 0, 0, .2) 0px 1px 3px 7px 1px;
+    
+}
+
+footer li {
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+
