@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
+import './UglyCard.css'
 
-export default function UglyCard(props) {
-  
-  
+function UglyCard (props) {
+
     return (
-    <div>
-        <h2>{props.title}</h2>
-        <h4>{props.description}</h4>
-        <div className='imgHolder' src={props.url}></div>
-        <button>Edit</button>
-        <button>Delete</button>
-
-    </div>
-  )
+        <div className="uglyCard">
+            <h2>{props.title}</h2>
+            <img src={props.imgUrl} alt={props.title}></img>
+            <h4>{props.description}</h4>
+        </div>
+    )
 }
+
+export default UglyCard

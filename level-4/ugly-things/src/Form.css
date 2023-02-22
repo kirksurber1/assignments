@@ -1,19 +1,27 @@
 form {
-    
-    width: 60vw;
-    height: 15vh;
-    border: 1px solid #3c3c3c;
+    width: 40vw;
+    height: 30vh;
+    border: 1px solid#3c3c3c;
+    border-radius: 15px;
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, .2) 0px 1px 7px 1px;
+    box-shadow: rgba(0, 0, 0, .2) 0px 3px 7px 1px;
     margin-left: auto;
     margin-right: auto;
     
+}
+
+form input {
+    margin: 1em
     
 }
 
-input {
-    margin: 1em;     
-    padding: 1em;
-    width: 20%;
-    
+.formDiv {
+    text-align: center;
+}
+
+.formDiv button {
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, maroon, gold) border-box;
+    border-radius: 15px;
+    border: 4px solid transparent;
 }

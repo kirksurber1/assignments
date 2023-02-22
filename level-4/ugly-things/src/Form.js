@@ -1,57 +1,53 @@
-import React from 'react'
+import React, {useContext} from "react";
 import './Form.css'
-// import axios from 'axios'
-
-export default function Form() {
-  
-  const [formData, setFormData] = React.useState({
-        title: "", url: "", description: "" 
-  }) 
+import { UglyContext } from "./UglyContext";
 
 
-    function handleChange(event) {
-        setFormData (prevFormData => {
+function Form (props) {
+
+    const [formData, setFormData] = React.useState ( {
+        title: "", imgUrl: "", description: ""
+    })
+
+    const {addUglyItem} = useContext(UglyContext)
+
+    function handleChange (event) {
+        setFormData(prevFormData => {
             return {
+                ...prevFormData,
+            [event.target.name]: event.target.value
+    }})
+    }
+
+function handleSubmit (event) {
+    event.preventDefault()
+    addUglyItem(formData)
+
+    setFormData (prevFormData => {
+        return {
             ...prevFormData,
             [event.target.name]: event.target.value
-            }
-        })
-    }
+        }
 
-
-
-  function handdleSubmit(event) {
-    event.preventDefault()
-
-    //API
-
-    // axios.post = ('https://api.vschool.io/kirksurber/thing', {
-    //   title: formData.title,
-    //   imgUrl: formData.url,
-    //   description: formData.description
-    // })
-    //   .then(res => res.json)
-    //   .catch(err => console.log(err))
-  
-
-    setFormData ({
-        title: "",
-        url: "",
+    })
+    setFormData({
+        title: "", 
+        imgUrl: "",
         description: ""
-    }
-    )
-  }
-
-
-  
-  return (
-    <div>
-        <form onSubmit={handdleSubmit}>
-            <input type="text" placeholder="Title" name='title' value={formData.title} onChange={handleChange} ></input>
-            <input type="text" placeholder="URL" name='url' value={formData.url} onChange={handleChange} ></input>
-            <input type="text" placeholder="Why is this ugly?" name='description' value={formData.description} onChange={handleChange} ></input>
-            <button>Submit</button>
-        </form>
-    </div>
-  )
+    })
 }
+
+    return (
+        <div className="formDiv">
+            <h2>Add Ugly Thing</h2>
+            <form onSubmit={handleSubmit}>
+                <input value={formData.title} placeholder="Title" name="title" onChange={handleChange}></input>
+                <input value={formData.imgUrl} placeholder="imgUrl" name="imgUrl" onChange={handleChange}></input>
+                <input value={formData.description} placeholder="Why it's Ugly" name="description" onChange={handleChange}></input>
+                <button>Add Ugly Thing to List</button>
+            </form>
+        </div>
+    )
+}
+
+export default Form

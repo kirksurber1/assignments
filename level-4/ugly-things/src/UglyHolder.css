@@ -1,0 +1,9 @@
+.uglyHolder {
+    width: 100vw;
+    height: 30vh;
+    border: 1px solid#3c3c3c;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, .2) 0px 3px 7px 1px;
+    
+}
