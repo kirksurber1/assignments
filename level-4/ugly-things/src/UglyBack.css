@@ -1,0 +1,9 @@
+.uglyBack {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    border: 1px solid #6f0404;
+    box-sizing: border-box;
+    box-shadow: rgba(92, 0, 0, 0.2) 0px 1px 7px 1px;
+}
+

@@ -1,0 +1,19 @@
+form {
+    
+    width: 60vw;
+    height: 15vh;
+    border: 1px solid #3c3c3c;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, .2) 0px 1px 7px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+input {
+    margin: 1em;     
+    padding: 1em;
+    width: 20%;
+    
+}
